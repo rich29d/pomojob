@@ -1,0 +1,21 @@
+#Options +FollowSymlinks
+
+RewriteEngine on
+
+# Quando a URL não tiver www, redirecionar para a URL com www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond $1 !^(index\.php|images|css|robots\.txt)
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#RewriteCond %{http_host} ^www.firee.com.br [NC]
+
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+#RewriteRule ^(.*)$ http://firee.com.br/index.php/$1 [R=301,L]

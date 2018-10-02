@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.login-page, .register-page{
+	background: #6b6b6b;
+}
+
+.login-logo img{ width: 100px; }
+
+.login-box-body{
+}
+
+.login-box-header{
+	text-align: center;
+    font-size: 17px;
+    padding: 5px 0;
+    background: #c3c3c3;
+	transition: all .2s ease;
+}
+
+.login-box-header.erro{ background:#933; color:#FFF; }
+.login-box-header.ok{ background:#063; color:#FFF; }
+.login-box-header.loading span{ display: none;}
+.login-box-header.loading img.loading{ display: block; margin: -4px auto;}

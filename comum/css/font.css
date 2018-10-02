@@ -1,0 +1,9 @@
+@font-face {
+    src: url('../font/kenyan_coffee_rg.ttf');
+    font-family: coffee;
+}
+
+@font-face {
+    src: url('../font/ScantypeBold_Personal.ttf');
+    font-family: scan;
+}

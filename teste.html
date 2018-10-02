@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta property="fb:app_id"      content="406655189415060">
+<meta property="og:site_name"   content="GIPHY">
+<meta property="og:url"         content="http://media0.giphy.com/media/IdcPofFGvr8pW/giphy.gif">
+<meta property="og:title"       content="Looney Tunes GIF - Find &amp; Share on GIPHY">
+<meta property="og:description" content="Discover &amp; Share this Looney Tunes GIF with everyone you know. GIPHY is how you search, share, discover, and create GIFs.">
+
+
+<meta property="og:type"        content="video.other">
+<meta property="og:image"       content="http://media0.giphy.com/media/IdcPofFGvr8pW/giphy.gif">
+<meta property="og:image:width"       content="500">
+<meta property="og:image:height"       content="292">
+
+<title>Documento sem título</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="//connect.facebook.net/en_US/sdk.js"></script>
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+        appId      : '505549369646098',
+        status     : true,
+        cookie     : true,
+        xfbml      : true  
+    });
+	
+	FB.ui({
+	  method: 'feed',
+	  link: 'https://developers.facebook.com/docs/',
+	  caption: 'An example caption',
+	}, function(response){});
+		
+};
+
+
+</script>
+</head>
+
+<body>
+<!--<iframe src="https://www.facebook.com/v2.5/dialog/share?app_id=406655189415060&display=page&e2e=%7B%7D&href=http%3A%2F%2Fgiphy.com%2Fgifs%2Flooney-tunes-bugs-bunny-daffy-duck-IdcPofFGvr8pW%3Fref%3Dfbt&iframe_test=true&locale=en_US&mobile_iframe=false&next=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fbz-D0tzmBsw.js%3Fversion%3D42%23cb%3Df22142642bf961c%26domain%3Dgiphy.com%26origin%3Dhttp%253A%252F%252Fgiphy.com%252Ff2d8cce3fd6f34%26relation%3Dopener%26frame%3Df3ea06ff4239c9c%26result%3D%2522xxRESULTTOKENxx%2522&sdk=joey&version=v2.5"></iframe>
+<a href="javascript:void(0)">teste</a>
+-->
+<!--<a target="popup" href="javascript:window.open('https://www.facebook.com/dialog/feed?display=popup&amp;caption=Garotos%20na%20bike%20-%20Netflix.&amp;description=Todos%20os%20epis%C3%B3dios%20na%20Netflix.&amp;picture=https://s3.amazonaws.com/stranger-things-netflix/17ceb75a-8449-4fe6-bb79-3856275e44b8.gif&amp;link=https://s3.amazonaws.com/stranger-things-netflix/17ceb75a-8449-4fe6-bb79-3856275e44b8.gif','Netflix','width=200,height=100')">
+      Facebook
+    </a>-->
+    
+ <input type="button" onclick="share_prompt('https://s3.amazonaws.com/stranger-things-netflix/3172bbeb-d5b2-4e1f-a58a-a26525f95edb.gif')" value="Share" />
+
+<script src="http://connect.facebook.net/en_US/all.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+FB.init({
+    appId: '505549369646098', 
+	version:  'v2.7',
+    status: true, 
+    cookie: true,
+    xfbml: true
+});
+
+function share_prompt(img)
+{
+
+
+    FB.ui(
+       {
+         method: 'feed',
+         name: 'Facebook Dialogs',
+         link: img,
+         picture: img,
+         caption: 'Reference Documentation',
+         description: 'Dialogs provide a simple, consistent interface for applications to interface with users.',
+         message: 'Facebook Dialogs are easy!'
+       },
+       function(response) {
+         if (response && response.post_id) {
+           alert('Post was published.');
+         } else {
+           alert('Post was not published.');
+         }
+       }
+     );
+ }
+
+</script>
+    
+</body>
+</html>

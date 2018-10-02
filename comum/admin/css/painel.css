@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content-wrapper{ margin-left:0 }
+
+.main-header .navbar-custom-menu{
+	float: none;	
+}
+.skin-green .main-header .navbar {
+    background-color: #545454;
+	position: static;
+	margin: auto;
+}
+.skin-green .main-header .logo {
+    background-color: #464646;
+	width: auto;
+	position: relative;
+	z-index:2;
+}
+.skin-green .main-header .logo:hover {
+    background-color: #343434;
+}
+
+.navbar-nav{ float: none; }
+
+.main-header .logo{ overflow: visible; }
+.main-header .logo img{
+	height: 100%;
+    margin-bottom: -13px;	
+}
+
+.cmp_tbl{
+	width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+
+.msg_status{
+	transition: all .4s ease;
+	transform: scale(0);
+	transform-origin: right;
+}
+
+.msg_status .loading,
+.msg_status .fa{
+	display: none;	
+}
+
+
+.msg_status.loading{color: #b7b7b7; transform: scale(1);}
+.msg_status.ok{color: #063; transform: scale(1);}
+.msg_status.erro{color: #900; transform: scale(1);}
+
+.msg_status.loading .loading,
+.msg_status.ok .fa-check,
+.msg_status.erro .fa-times{
+	display:inline-block;
+}
+
+.box-novo-item .form-control{ border: none; font-size: 30px;}
+.box-novo-item .input-group-btn:last-child>.btn{
+	border-top-left-radius: 6px; 
+    border-bottom-left-radius: 6px;
+}
+
+.nav.navbar-nav .active{
+	background: #444343;
+}
+
+.cell_click{ cursor: pointer; }
+
+.cln_excluir{
+	text-align: center;
+	font-size: 15px;
+	width: 30px;	
+}
